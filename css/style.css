@@ -1,0 +1,166 @@
+body {
+    background-color: F4F0ED;
+}
+h1 {
+    color: #AF3B6E;
+    font-family: Dripping Drops;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 121px;
+    letter-spacing: 0.042em;
+}
+h2 {
+    color:#AF3B6E;
+    font-size: 57px;
+    font-family: Dripping Drops;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.042em;
+}
+h3 {
+    font: normal 300 16px "Merriweather Sans", sans-serif;
+}
+header {
+    display: flex;
+    background-color: #949ABF;
+    position: fixed;
+    width: 66.25%;
+    height: 8.658%;
+    left: 16.875%;
+    right: 16.875%;
+    top: 0px;
+    padding: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    z-index: 1;
+}
+.logo {
+    display: flex;
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 0;
+    justify-self: left;
+    flex: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo img {
+    transition: 3s;
+}
+.logo img:hover {
+    transform: rotate(1440deg);
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 0;
+    flex: 2;
+    gap: 24px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.navbar img {
+    transition: 3s;
+}
+.navbar img:hover {
+    transform: rotate(1440deg);
+}
+.heroImg {
+        display: grid;
+        grid-template-columns: 44.33% 53.78%;
+        grid-template-rows: 76.82% 19.09%;
+        grid-template-areas:
+        "portrait name"
+        "portrait designer"
+        ;
+        gap: 8.18% 3.78%;
+        background-color: #F7DD72;
+        position: absolute;
+        width: 66.25%;
+        height: 47.619%;
+        left: 16.875%;
+        right: 16.875%;
+        top: 10%;
+        padding: 4px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 14px;
+}
+.hero {
+    width: 306px;
+    object-fit: contain;
+    grid-area: portrait;
+    align-self: center;
+    justify-self: end;
+}
+.heroImg img {
+    max-width: 100%;
+    min-width: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    align-self: center;
+    justify-self: flex-end;
+}
+.name {
+    align-self: center;
+    justify-self: start;
+    grid-area: name;
+}
+.heroImg h1 {
+    line-height: 133%;
+}
+.designer{
+    grid-area: designer;
+    align-self: start;
+    justify-self: center;
+    color:#AF3B6E;
+}
+.getintouch {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    background-color: #F7DD72;
+    position: absolute;
+    width: 66.25%;
+    height: 12.1212%;
+    left: 16.875%;
+    right: 16.875%;
+    bottom: 40px;
+    padding: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 14px;
+    gap: 8px;
+}
+.getintouch img {
+    object-fit: contain;
+    max-height: 100%;
+    min-width: 0;
+    width: 50px;
+}
+.getintouch h2 {
+    flex: 1;
+    position: center;
+    text-align: center;
+}
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.getintouch h3 {
+    text-align: center;
+    position: right;
+    color: #AF3B6E;
+}
+.socials {
+    flex: 1;
+}
+.copyright {
+    font-style: italic;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom:0;
+}
