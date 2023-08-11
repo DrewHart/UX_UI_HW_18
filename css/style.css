@@ -1,6 +1,3 @@
-body {
-    background-color: F4F0ED;
-}
 h1 {
     color: #AF3B6E;
     font-family: Dripping Drops;
@@ -44,10 +41,14 @@ header {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .logo img {
-    transition: 3s;
+    transition: 1.5s;
+    max-width: 100%;
+    width: 72px;
+    height: 72px;
+    display: block;
 }
 .logo img:hover {
-    transform: rotate(1440deg);
+    transform: rotate(360deg);
 }
 .navbar {
     display: flex;
@@ -62,11 +63,30 @@ header {
 }
 .navbar img {
     transition: 3s;
+    max-width: 100%;
+    width: 72px;
+    height: 72px;
+    display: block;
 }
 .navbar img:hover {
     transform: rotate(1440deg);
 }
+body {
+    background-color: F4F0ED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+}
+.top {
+    height: 8.658%;
+    width: 66.25%;
+    flex: 1 1 0px;
+}
 .heroImg {
+        width: 66.25%;
+        flex: 1 1 0px;
         display: grid;
         grid-template-columns: 44.33% 53.78%;
         grid-template-rows: 76.82% 19.09%;
@@ -76,12 +96,12 @@ header {
         ;
         gap: 8.18% 3.78%;
         background-color: #F7DD72;
-        position: absolute;
+        /*position: absolute;
         width: 66.25%;
         height: 47.619%;
         left: 16.875%;
         right: 16.875%;
-        top: 10%;
+        top: 10%;*/
         padding: 4px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 14px;
@@ -96,6 +116,9 @@ header {
 .heroImg img {
     max-width: 100%;
     min-width: 0;
+    width: 306px;
+    height: 412px;
+    display: block;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
     align-self: center;
@@ -115,17 +138,117 @@ header {
     justify-self: center;
     color:#AF3B6E;
 }
-.getintouch {
+.aboutme {
+    flex: 1 1 0px;
     display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    width: 776px;
+    height: 142;
+   /* top: 60%;
+    position: absolute;
+    left: 16.875%;
+    right: 16.875%;*/
+}
+.greatesthits {
+    flex: 1 1 0px;
+    width: 66.25%;
+    max-height:15.72%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "greatesthits greatesthits greatesthits"
+    "kidventures perpal ndlb";
+    padding: 1%;
+    gap: 1%;
+    justify-items: center;
+    background: #F7DD72;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+
+}
+.greatesthits h2 {
+    grid-area: greatesthits;
+    align-self: center;
+    
+}
+.kidventures {
+    grid-area: kidventures;
+    background: #949ABF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2%;
+
+}
+.kidventures img {
+    max-width: 100%;
+    width: 136px;
+    height: 68px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.kidventures h3 {
+    text-align: center;
+}
+.perpal {
+    grid-area: perpal;
+    background: #949ABF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2%;
+}
+.perpal img {
+    max-width: 100%;
+    width: 136px;
+    height: 84px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.perpal h3 {
+    text-align: center;
+}
+.ndlb {
+    grid-area: ndlb;
+    background: #949ABF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    padding: 2%;
+}
+.ndlb img {
+    max-width: 100%;
+    width: 136px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ndlb h3 {
+    text-align: center;
+}
+.thankyou {
+    flex: 1 1 0px;
+}
+footer {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66.25%;
+}
+.getintouch {
     flex-direction:row;
     align-items: center;
     background-color: #F7DD72;
-    position: absolute;
+    width: 100%;
+    /*position: absolute;
     width: 66.25%;
     height: 12.1212%;
     left: 16.875%;
     right: 16.875%;
-    bottom: 40px;
+    bottom: 40px;*/
     padding: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
@@ -133,9 +256,9 @@ header {
 }
 .getintouch img {
     object-fit: contain;
-    max-height: 100%;
-    min-width: 0;
+    max-width: 100%;
     width: 50px;
+    height: 50px;
 }
 .getintouch h2 {
     flex: 1;
@@ -159,7 +282,6 @@ header {
 }
 .copyright {
     font-style: italic;
-    position: absolute;
     width: 100%;
     text-align: center;
     bottom:0;
