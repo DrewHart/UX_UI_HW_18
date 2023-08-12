@@ -1,3 +1,4 @@
+/*outline: 1px solid red;*/
 /*styling sheet*/
 @font-face {
     font-family: 'disgusting_behaviorregular';
@@ -8,7 +9,8 @@
 }
 h1 {
     color: #AF3B6E;
-    font: normal 8vw 'disgusting_behaviorregular';
+    font: normal 11vw 'disgusting_behaviorregular';
+    line-height: 100%;
 }
 h2 {
     color:#AF3B6E;
@@ -79,13 +81,15 @@ header {
 }
 /*Start of main page*/
 body {
-    background-color: F4F0ED;
+    background-color: #F4F0ED;
     /*display: grid;*/
     padding-top: 88px;
+    width: 100%;
 }
 /*Section heroImg*/
 .heroImg {
         width: 66.25%;
+        max-height: 420px;
         margin-left: auto;
         margin-right: auto;
         display: grid;
@@ -96,7 +100,6 @@ body {
         "portrait designer";
         gap: 8.18% 3.78%;
         background-color: #F7DD72;
-        padding: 4px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 14px;
 }
@@ -108,8 +111,9 @@ body {
     object-fit: contain;
     grid-area: portrait;
     align-self: center;
-    justify-self: end;
+    justify-self: center;
     display: inline-block;
+    padding-bottom: 2%;
 }
 .heroImg img {
     width: 100%;
@@ -118,21 +122,27 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
     align-self: center;
-    justify-self: flex-end;
+    justify-self: center;
 }
 .name {
+    width: 100%;
+    height: auto;
     align-self: center;
     justify-self: start;
     grid-area: name;
 }
-.heroImg h1 {
-    line-height: 133%;
+.name h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-height: 296px;
 }
 .designer{
     grid-area: designer;
     align-self: start;
     justify-self: center;
     color:#AF3B6E;
+    width: 80%;
+    text-align: center;
 }
 /*Section aboutme*/
 .aboutme {
@@ -202,12 +212,19 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     width: 100%;
+    max-height: 90%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .greatesthits h2 {
     margin: auto;
     text-align: center;
+
 }
 .kidventures {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-area: kidventures;
     background: #949ABF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -217,6 +234,7 @@ body {
     height: auto;
 }
 .kidventures img {
+    align-self: center;
     max-width: 136px;
     max-height: 68px;
     width: 100%;
@@ -230,12 +248,16 @@ body {
 }
 .perpal {
     grid-area: perpal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     background: #949ABF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     padding: 2%;
 }
 .perpal img {
+    align-self: center;
     max-width: 136px;
     max-height: 84px;
     width: 100%;
@@ -249,12 +271,16 @@ body {
 }
 .ndlb {
     grid-area: ndlb;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
     background: #949ABF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 14px;
     padding: 2%;
 }
 .ndlb img {
+    align-self: center;
     width: 100%;
     height: auto;
     max-width: 136px;
@@ -285,6 +311,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 66.25%;
+
 }
 /*Section getintouch*/
 .getintouch {
@@ -298,11 +325,14 @@ footer {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
     gap: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .getintouch h2 {
     position: center;
     text-align: center;
-    margin: 1%;
+    margin: auto;
+    line-height: 50%;
 }
 .contact {
     flex: 1;
@@ -310,13 +340,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    max-height: 50px;
 }
 .getintouch h3 {
     text-align: center;
     position: right;
     justify-self: center;
     color: #AF3B6E;
-    margin: 1%;
+    max-height: 50px;
 }
 .socials {
     flex: 1;
