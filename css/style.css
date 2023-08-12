@@ -1,16 +1,19 @@
 /*styling sheet*/
+@font-face {
+    font-family: 'disgusting_behaviorregular';
+    src: url('../fonts/disgb___-webfont.woff2') format('woff2'),
+         url('../fonts/disgb___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 h1 {
     color: #AF3B6E;
-    font-family: Dripping Drops;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8vw;
-    letter-spacing: 0.042em;
+    font: normal 8vw 'disgusting_behaviorregular';
 }
 h2 {
     color:#AF3B6E;
-    font: normal 400 4.8vw Dripping Drops;
-    letter-spacing: 0.042em;
+    font: normal 4.8vw 'disgusting_behaviorregular';
 }
 h3 {
     font: normal 300 1.2vw "Merriweather Sans", sans-serif;
@@ -87,22 +90,14 @@ body {
 /*Section heroImg*/
 .heroImg {
         width: 66.25%;
-        flex: 1 1 0px;
         display: grid;
         grid-template-columns: 44.33% 53.78%;
         grid-template-rows: 76.82% 19.09%;
         grid-template-areas:
         "portrait name"
-        "portrait designer"
-        ;
+        "portrait designer";
         gap: 8.18% 3.78%;
         background-color: #F7DD72;
-        /*position: absolute;
-        width: 66.25%;
-        height: 47.619%;
-        left: 16.875%;
-        right: 16.875%;
-        top: 10%;*/
         padding: 4px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 14px;
@@ -145,7 +140,6 @@ body {
 .aboutme {
     max-width: 100%;
     width: 66.25%;
-    height: 142px;
     display: grid;
     grid-template-columns: .5fr repeat(3, minmax(0, 1fr)) .5fr;
     grid-template-areas:
@@ -193,7 +187,6 @@ body {
 }
 /*Section greatesthits*/
 .greatesthits {
-    flex: 1 1 0px;
     width: 66.25%;
     max-height:10.72%;
     display: grid;
@@ -282,9 +275,13 @@ body {
 .thankyou {
     flex: 1 1 0px;
 }
+/*Section thankyou*/
+.thankyou h2 {
+    margin: auto;
+    text-align: center;
+}
 /*Start of Footer*/
 footer {
-    flex: 1 1 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -298,19 +295,12 @@ footer {
     width: 100%;
     justify-items: center;
     align-items: center;
-    /*position: absolute;
-    width: 66.25%;
-    height: 12.1212%;
-    left: 16.875%;
-    right: 16.875%;
-    bottom: 40px;*/
     padding: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 14px;
     gap: 8px;
 }
 .getintouch h2 {
-    flex: 1;
     position: center;
     text-align: center;
     margin: 1%;
