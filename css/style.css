@@ -425,82 +425,29 @@ footer {
     .name-oneline {
         display: inline-block;
     }
+    .aboutme {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "background"
+        "skills" 
+        "programs";
+    }
+    .background {
+        max-width: auto;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: auto;
+    }
+    .programs {
+        max-width: auto;
+    }
 }
 
 /*
 outline: 1px solid red;
 
-h1 {
-    color: #AF3B6E;
-    font: normal 11vw 'disgusting_behaviorregular';
-    line-height: 100%;
-}
-h2 {
-    color:#AF3B6E;
-    font: normal 4.8vw 'disgusting_behaviorregular';
-}
-h3 {
-    font: normal 300 1.2vw "Merriweather Sans", sans-serif;
-}
-p {
-    font: normal 400 1.1vw "Merriweather Sans", sans-serif;
-}
 
-.heroImg {
-        width: 66.25%;
-        max-height: 420px;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: 44.33% 53.78%;
-        grid-template-rows: 76.82% 19.09%;
-        grid-template-areas:
-        "portrait name"
-        "portrait designer";
-        gap: 8.18% 3.78%;
-        background-color: #F7DD72;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        border-radius: 14px;
-}
-.hero {
-    width: 100%;
-    height: auto;
-    max-width: 306px;
-    max-height: 412px;
-    object-fit: contain;
-    grid-area: portrait;
-    align-self: center;
-    justify-self: center;
-    display: inline-block;
-    padding-bottom: 2%;
-}
-.heroImg img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 14px;
-    align-self: center;
-    justify-self: center;
-}
-.name {
-    width: 100%;
-    height: auto;
-    align-self: center;
-    justify-self: start;
-    grid-area: name;
-}
-.name h1 {
-    margin-top: auto;
-    margin-bottom: auto;
-    max-height: 296px;
-}
-.designer{
-    grid-area: designer;
-    align-self: start;
-    justify-self: center;
-    color:#AF3B6E;
-    width: 80%;
-    text-align: center;
-}
 */
