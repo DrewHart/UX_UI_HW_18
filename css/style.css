@@ -9,18 +9,18 @@
 }
 h1 {
     color: #AF3B6E;
-    font: normal calc(20px + 10vw) 'disgusting_behaviorregular';
+    font: normal clamp(60px, 12vw, 150px) 'disgusting_behaviorregular';
     line-height: 100%;
 }
 h2 {
     color:#AF3B6E;
-    font: normal calc(36px + 3.8vw) 'disgusting_behaviorregular';
+    font: normal clamp(50px, 6vw, 80px) 'disgusting_behaviorregular';
 }
 h3 {
-    font: normal 300 calc(14px + .25vw) "Merriweather Sans", sans-serif;
+    font: normal 300 clamp(16px, 2vw, 20px) "Merriweather Sans", sans-serif;
 }
 p {
-    font: normal 400 calc(12px + .25vw) "Merriweather Sans", sans-serif;
+    font: normal 400 clamp(12px, 1.5vw, 16px) "Merriweather Sans", sans-serif;
 }
 /*Navigation Bar*/
 header {
