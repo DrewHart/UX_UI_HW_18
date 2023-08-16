@@ -82,7 +82,6 @@ header {
 /*Start of main page*/
 body {
     background-color: #F4F0ED;
-    /*display: grid;*/
     padding-top: 88px;
 }
 /*Section heroImg*/
@@ -296,7 +295,6 @@ body {
 }
 /*Section thankyou*/
 .thankyou {
-    grid-area: thankyou;
     flex: 1 1 0px;
     text-align: center;
     width: 66.25%;
@@ -318,7 +316,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 66.25%;
+    width: 63.75%;
 
 }
 /*Section getintouch*/
