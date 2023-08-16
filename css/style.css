@@ -294,16 +294,22 @@ body {
 .ndlb h3 {
     text-align: center;
 }
-.thankyou {
-    flex: 1 1 0px;
-}
 /*Section thankyou*/
-.thankyou{
+.thankyou {
     grid-area: thankyou;
+    flex: 1 1 0px;
+    text-align: center;
+    width: 66.25%;
+    margin: 1% auto 1% auto;
+    background-color: #F7DD72;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
 }
 .thankyou h2 {
     margin: auto;
-    text-align: center;
+}
+.tymobile {
+    display: none;
 }
 /*Start of Footer*/
 footer {
@@ -397,9 +403,6 @@ footer {
         padding-left: min(80px, 22%);
         padding-top: 2%;
     }
-    .greatesthits {
-        width: 95%;
-    }
     .heroImg {
         width: 95%;
         grid-template-rows: 75% 25%;
@@ -443,6 +446,40 @@ footer {
     }
     .programs {
         max-width: auto;
+    }
+    .greatesthits {
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: .25fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "greatesthits"
+        "kidventures"
+        "perpal"
+        "ndlb";
+        margin-top: 2%;
+    }
+    .thankyou {
+        width: 95%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    .tymobile {
+        display: inline-block;
+        text-align: center;
+    }
+    .tydesktop {
+        display: none;
+    }
+    footer {
+        width: 85%;
+    }
+    .getintouch {
+        flex-direction: column;
+    }
+    .socials {
+        order: 2;
+        display: flex;
+        justify-content: space-around;
     }
 }
 
